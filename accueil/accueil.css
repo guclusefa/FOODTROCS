@@ -1,0 +1,72 @@
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.couleur {
+    color:#9a0606;
+}  
+.couleurhover:hover {
+  color:#9a0606;
+  text-decoration: none;
+}  
+
+.hover:hover {
+  background-color: #9a0606;
+}
+
+.backcouleur{
+  background-color: #9a0606;
+}
+
+.backcouleur2{
+  background-color:  WHITE;
+  color: BLACK;
+}
+
+.backcouleur3{
+  background-color:  BLACK;
+  color: white;
+}
+
+.entree {
+  margin-top: -100px;
+}
+
+.font{
+  font-family: "Amatic SC", sans-serif
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.backcouleur0{
+  background-color: #9a0606;
+  color: white;
+  text-decoration: none;
+}
+.hover0:hover{
+  background-color: #720606;
+  color: white;
+}
+
+.test{
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.test:hover{
+  background-color: #720606;
+}
+
+
+footer div p{
+  font-weight: bold;
+}
+
+footer div p a {
+    text-decoration: none;
+}
+
+footer div p a:hover {
+    text-decoration:underline;
+}
