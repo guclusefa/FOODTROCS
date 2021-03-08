@@ -1,0 +1,17 @@
+.w3-content i{
+    color: #9a0606;
+}
+
+.barrecouleur{
+    background-color: #9a0606;
+    border-radius: 16px;
+}
+
+.couleur {
+    background-color: #9a0606;
+    color: white;
+}
+
+.w3-container {
+    font-size: x-large;
+}

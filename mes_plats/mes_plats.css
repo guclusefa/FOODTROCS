@@ -1,0 +1,302 @@
+/* 
+font-family: 'Baloo 2', cursive;
+font-family: 'Lobster', cursive; 
+Fond : rgb(34, 34, 34); 
+vert menthe titres : rgb(70,189,147)
+boutons : rgb(189,179,246);
+lightcoral : #fb5f5f;
+/* GENERAL */
+
+.lolilol{
+    background-color: green;
+}
+.container {
+    background-color: black;
+    width: auto;
+    border-radius: 3px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    padding: 2rem 4rem;
+}
+
+.title {
+    color: white;
+    background-color: #9a0606;
+    border-radius: 50px;
+    border-bottom: 2px solid #fff;
+}
+
+.title-2 {
+    font-size: 3.5rem;
+    display: inline-block;
+    justify-self: center;
+    padding: 0 4rem;
+    margin-bottom: 3rem;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #fff;
+}
+
+p.text,
+.form__label {
+    font-size: 1.8rem;
+    color: white;
+}
+.bold {
+    font-weight: bold;
+}
+
+/* PARTIE INTRO */
+.introduction {
+    text-align: center;
+    padding-bottom: 0.6rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #720606;
+}
+
+/* PARTIE FORM */
+.form-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+    column-gap: 5rem;
+}
+
+.form__input {
+    font-size: 1.4rem;
+    font-family: inherit;
+    padding: 0.3rem 1.2rem;
+    color: #222222;
+    background-color: #fff;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 5px solid transparent;
+    transition: all 0.3s;
+}
+
+.form__group {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* PARTIE INFOCLIENT */
+.infoClient {
+    grid-column: 1/2;
+    width: 100%;
+}
+
+.infoClient .form__group .form__label {
+    padding-left: 1.5rem;
+    opacity: 0;
+    transition: all 0.3s 0.1s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.infoClient .form__group .form__input {
+    width: 100%;
+}
+
+.infoClient .form__group .form__input:focus {
+    outline: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+    border-bottom: 5px solid #9a0606;
+    width: 66.6666%;
+    transition: all 0.2s;
+}
+
+.infoClient .form__group .form__input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.infoClient .form__group .form__input:focus:invalid {
+    border-bottom: 5px solid #9a0606;
+}
+
+.infoClient .form__group .form__input:focus + .form__label {
+    opacity: 1;
+    font-size: 2rem;
+}
+
+.infoClient .form__group .form__input::-webkit-input-placeholder {
+    color: #000;
+    transform: translateY(3px);
+}
+
+.form__message {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form__textarea {
+    width: 100%;
+    min-height: 3rem;
+}
+.form__textarea:focus {
+    outline: none;
+}
+.form__textarea:focus::-webkit-input-placeholder {
+    display: none;
+    visibility: hidden;
+}
+
+/* PARTIE RESERVATION */
+.reservation {
+    grid-column: 2/3;
+}
+
+#dropdown {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-family: inherit;
+    text-align: center;
+    color: #222222;
+    background-color: #fff;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    width: 100%;
+}
+
+.radio__input {
+    display: none;
+}
+.radio__label {
+    padding-left: 2.5rem;
+    cursor: pointer;
+}
+.radio__newBtn {
+    position: absolute;
+    left: 0;
+    transform: translateY(0.5rem);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid #9a0606;
+}
+
+.radio__newBtn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #9a0606;
+    visibility: hidden;
+}
+
+.radio__input:checked ~ .radio__label .radio__newBtn::after {
+    visibility: visible;
+}
+.radio__input:checked ~ .radio__label {
+    color: #9a0606;
+}
+
+.cours__type-input {
+    display: none;
+}
+.check__label {
+    padding-left: 2.5rem;
+    cursor: pointer;
+}
+.check__newBtn {
+    position: absolute;
+    left: 0;
+    height: 1.06rem;
+    width: 1.06rem;
+    border: 0.2rem solid #9a0606;
+    transform: rotate(45deg) translate(0.65rem, 0.2em);
+}
+
+.check__newBtn::after {
+    content: "";
+    height: 0.35rem;
+    width: 0.35rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #9a0606;
+    visibility: hidden;
+}
+
+.cours__type-input:checked ~ .check__label .check__newBtn::after {
+    visibility: visible;
+}
+.cours__type-input:checked ~ .check__label {
+    color: #9a0606;
+}
+
+/* SUBMIT */
+.submit {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.submitBtn {
+    cursor: pointer;
+    display: block;
+    margin: 3rem 0 2rem;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    background-color: #9a0606;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    font-family: inherit;
+    font-size: 1.8rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s;
+}
+
+.submitBtn:hover {
+    background-color: #720606);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  .submitBtn:active {
+    background-color: #720606;
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+  }
+  
+  .submitBtn2 {
+    cursor: pointer;
+    display: block;
+    margin: 3rem 0 2rem;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    background-color: green;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    font-family: inherit;
+    font-size: 1.8rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s;
+  }
+  
+  .submitBtn2:hover {
+    background-color: darkgreen);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 0 15px rgb(2, 51, 17);
+  }
+  
+  .submitBtn2:active {
+    background-color: rgb(2, 51, 17);
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+  }

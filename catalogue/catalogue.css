@@ -1,0 +1,383 @@
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
+
+* {
+  box-sizing: border-box;
+}
+
+.wrap{
+  width: 87%;
+  margin: auto;
+  padding: 0 10px;
+  background-color: rgba(255,255,255,0.9);
+  overflow: hidden;
+  box-shadow: 0 0 5px #eee;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 { letter-spacing: 0.05em; font-weight: 400; }
+
+h1{text-align:center;}
+
+
+.more:link, .more:visited {
+  transition-duration: 0.2s;    
+  transition-timing-function: ease-out;
+}
+
+[class*='col-']{
+  float:left;   
+}
+
+.col-1-3{
+  width: 33.33%;
+  padding: 20px;
+}
+  
+.col-2-3{
+  width: 66.66%; 
+  padding: 20px;
+}
+
+.col-1-4{
+  width: 25%; 
+  padding: 10px;
+
+}
+
+.show{
+  width: 100%;
+  height: 100%;
+  float: left;
+  border: 1px solid rgba(0,0,0,0.04);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #fff;
+  display: block;
+  border-radius: 4px;
+}
+
+
+.aspect{
+  position: relative;
+  padding-bottom: 120%;
+  height: 0;
+  overflow: hidden;
+}
+
+.show .mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+
+.show-first a.more {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px; 
+  background: #FFF;
+  color: #222;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+  position: relative;
+  border: 1px solid #999;
+
+}
+
+.show-first a.more:hover {
+  box-shadow: 0 0 5px #000;
+}
+
+.show-first p{
+  letter-spacing: 0.15em;
+  color: #f4f4f4;
+  font-size: 28px; 
+}
+
+.show-first img {
+  transition: all 0.2s linear;
+}
+
+.show-first .mask {
+  opacity: 0;
+  background-color: rgba(0,0,0, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+.show-first h2 {
+  color: #f2f2f2;
+  margin-top: 10%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  background: rgba(0,0,0,0.7);
+}
+.show-first p {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.show-first a.info{
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.show-first:hover img {
+  transform: scale(1.2);
+}
+.show-first:hover .mask {
+  opacity: 1;
+}
+.show-first:hover h2,
+.show-first:hover p,
+.show-first:hover a.info {
+  opacity: 1;
+}
+.show-first:hover p {
+  transition-delay: 0.1s;
+}
+.show-first:hover a.info {
+  transition-delay: 0.2s;
+}
+
+/* SECOND */
+
+.show-second img {
+  transition: all 0.3s ease-in-out;
+}
+.show-second .mask {
+  background-image: url(https://subtlepatterns.com/patterns/gplaypattern.png);
+  background-color: rgba(0,0,0,0.3);
+  transform: translateX(-110%);
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 7px #ccc;
+}
+.show-second h2{
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+}
+.show-second p{
+  opacity: 0;
+  color: #333;
+  transition: all 0.2s linear;
+}
+
+.show-second a.more {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px; 
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+  position: relative;
+  border-radius: 7px;
+
+}
+
+.show-second a.more:hover {
+  background-color: #444;
+}
+
+.show-second:hover .mask {
+  transform: translateX(0px);
+} 
+
+.show-second:hover img {
+  transform: translateX(80%);
+  transition-delay: 0.1s;
+}
+
+.show-second:hover p{
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+
+/* THIRD */
+
+.show-third a.more {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px; 
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+  position: relative;
+}
+
+.show-third a.more:hover {
+  box-shadow: 0 0 5px #fff;
+  background-color: #222;
+}
+
+.show-third p{
+  font-size: 28px; 
+}
+
+.show-third .mask {
+  opacity: 0;
+  background-color: rgba(255,255,255, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.show-third h2 {
+  color: #000;
+  margin-top: 10%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.show-third p {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.show-third a.info{
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.show-third img{
+  transition: all 0.2s ease-in-out;
+}
+
+.show-third:hover img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray;
+    -webkit-filter: grayscale(100%);}
+
+.show-third:hover .mask {
+  opacity: 1;
+}
+.show-third:hover h2,
+.show-third:hover p,
+.show-third:hover a.info {
+  opacity: 1;
+}
+.show-third:hover p {
+  transition-delay: 0.1s;
+}
+.show-third:hover a.info {
+  transition-delay: 0.2s;
+}
+
+/* FOURTH */
+
+.show-fourth a.more {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px; 
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #000;
+  position: relative;
+}
+
+.show-fourth a.more:hover {
+  box-shadow: 0 0 5px #fff;
+  background-color: #222;
+}
+
+.show-fourth p{
+  font-size: 28px; 
+}
+
+.show-fourth .mask {
+  opacity: 0;
+    background-image: url(https://subtlepatterns.com/patterns/gplaypattern.png);
+  background-color: rgba(255,255,255, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.show-fourth h2 {
+  color: #000;
+  margin-top: 10%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.show-fourth p {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.show-fourth a.info{
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.show-fourth img{
+  transition: all 0.2s ease-in-out;
+}
+
+.show-fourth:hover img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+  transform: scale(1.5);
+}
+
+.show-fourth:hover .mask {
+  opacity: 1;
+  
+}
+.show-fourth:hover h2,
+.show-fourth:hover p,
+.show-fourth:hover a.info {
+  opacity: 1;
+}
+.show-fourth:hover p {
+  transition-delay: 0.1s;
+}
+.show-fourth:hover a.info {
+  transition-delay: 0.2s;
+}
+
+@media only screen and (max-width: 767px) { 
+  
+  .col-1-4{
+    width: 50%; 
+    padding: 10px;
+    overflow: hidden;
+    clear: right;
+  }
+
+  
+  .wrap{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;}
+  
+  .mobile-clear{
+    clear:both;}
+
+}
+
+.submitBtn {
+  cursor: pointer;
+  display: block;
+  margin: 3rem 0 2rem;
+  padding: 1rem 4rem;
+  border-radius: 30px;
+  background-color: #9a0606;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  font-family: inherit;
+  font-size: 1.8rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s;
+}
+
+
