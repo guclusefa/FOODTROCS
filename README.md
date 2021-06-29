@@ -1,6 +1,6 @@
 # FOODTROCS
 -Site type marketplace en PHP
--Crée à but pédagogique par GUCLU Sefa en avril 2020
+-Crée à but pédagogique par GUCLU Sefa en avril 2020  
 
 # Fonctionalites :
 -Espace membre : possibilité de consulter son profil et de le modifier (photo de profil, nom, prénom, mot de passe, mail etc.)  
